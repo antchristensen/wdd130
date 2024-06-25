@@ -18,6 +18,7 @@ nav a {
 
 h1 {
     color: steelblue;
+    padding: .5rem;
 }
 
 main img {
@@ -27,6 +28,7 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
@@ -34,22 +36,24 @@ p {
 }
 
 main {
-    max-width: 840px;
+    max-width: 640px;
 }
 
 aside {
     width: 20em;
-    margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1em;
-    background-color: #eee;
-    color: #333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 55px;
+    left: 170px;
 }
 
 
@@ -63,21 +67,17 @@ footer {
 
 /* Class Selectros */
 
-box {
-    margin: 1em;
-    border: 1px solid rgb(10, 115, 221);
-    padding: 1em;
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0,0,0,1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
 }
 
 aside {
     width: 20em;
     text-align: center;
-}
-
-aside h2 {
-    position: absolute;
-    top: 47px;
-    left: 150px;
 }
 
 
