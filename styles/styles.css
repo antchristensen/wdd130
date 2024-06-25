@@ -1,4 +1,10 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -20,6 +26,7 @@ main img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
@@ -54,13 +61,24 @@ footer {
     text-align: center;
 }
 
+/* Class Selectros */
 
+box {
+    margin: 1em;
+    border: 1px solid rgb(10, 115, 221);
+    padding: 1em;
+}
 
+aside {
+    width: 20em;
+    text-align: center;
+}
 
-
-
-
-
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
 
 
 
