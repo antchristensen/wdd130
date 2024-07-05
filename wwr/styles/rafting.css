@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 
 :root {
     --primary-color: #3498db;
@@ -13,7 +11,6 @@
     --overlay-text-color: rgb(0, 0, 0);
 }
 
-
 body {
     font-family: var(--heading-font);
     color: var(--text-color);
@@ -24,33 +21,38 @@ body {
 }
 
 header {
-    text-align: left; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header img {
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
-    display: block;
 }
 
 nav {
-    margin-top: 0px; 
-    text-align: left; 
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
-    color: rgb(0, 0, 0);
+    color: #fff;
     text-decoration: none;
-
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 5px;
 }
 
-
 .hero {
-    position: relative;
     text-align: center;
     margin: 20px 0;
 }
@@ -61,38 +63,27 @@ nav a:hover {
 }
 
 .hero h1 {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--text-color);
+    color: var(--primary-color);
     font-size: 3em;
-    background-color: var(--background-color);
-    padding: 10px 20px;
-    border-radius: 5px;
+    margin-top: 20px;
 }
 
 .hero article {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: var(--background-color);
     color: var(--text-color);
     padding: 20px;
     border-radius: 5px;
-    width: 60%;
+    margin: 20px auto;
+    max-width: 800px;
     text-align: left;
-    font-size: 1em;
 }
 
 .hero article img {
     float: right;
     margin-left: 10px;
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
 }
-
 
 section {
     margin: 20px 0;
@@ -102,19 +93,56 @@ section h2 {
     color: var(--secondary-color);
     font-size: 2em;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-section p {
+.history-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content p {
+    flex: 1;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-section img {
-    max-width: 100%;
+.history-content img {
+    max-width: 200px;
     height: auto;
-    display: block;
 }
 
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+    max-width: 180px;
+    flex: 1;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 5px;
+    color: var(--text-color);
+}
+
+nav.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
 
 nav.sociallinks a {
     text-decoration: none;
@@ -126,10 +154,13 @@ nav.sociallinks a:hover {
 }
 
 footer {
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
-    
-    color: rgb(6, 6, 6);
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-top: 20px;
 }
 
 footer p {
@@ -141,6 +172,18 @@ footer nav img {
     height: auto;
     margin: 0 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
