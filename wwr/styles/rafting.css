@@ -8,7 +8,7 @@
     --text-color: #2c3e50;
     --heading-font: 'Roboto', sans-serif;
     --overlay-bg: rgba(0, 0, 0, 0.5);
-    --overlay-text-color: rgb(0, 0, 0);
+    --overlay-text-color: rgb(255, 255, 255); 
 }
 
 body {
@@ -40,7 +40,7 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff; 
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s;
@@ -48,7 +48,7 @@ nav a {
 
 nav a:hover {
     background-color: var(--secondary-color);
-    color: #fff;
+    color: #ffffff; 
     border-radius: 5px;
 }
 
@@ -63,7 +63,7 @@ nav a:hover {
 }
 
 .hero h1 {
-    color: var(--primary-color);
+    color: #1a1a1a; 
     font-size: 3em;
     margin-top: 20px;
 }
@@ -90,7 +90,7 @@ section {
 }
 
 section h2 {
-    color: var(--secondary-color);
+    color: #1a1a1a; 
     font-size: 2em;
     margin-bottom: 10px;
     text-align: center;
@@ -146,7 +146,7 @@ nav.sociallinks {
 
 nav.sociallinks a {
     text-decoration: none;
-    color: var(--accent-color);
+    color: #ffffff; 
 }
 
 nav.sociallinks a:hover {
