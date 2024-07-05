@@ -8,7 +8,9 @@
     --text-color: #2c3e50;
     --heading-font: 'Roboto', sans-serif;
     --overlay-bg: rgba(0, 0, 0, 0.5);
-    --overlay-text-color: rgb(255, 255, 255); 
+    --overlay-text-color: rgb(255, 255, 255);
+    --link-color: #000000; /* High contrast black */
+    --link-hover-bg: #2980b9; /* Darker shade of blue */
 }
 
 body {
@@ -40,15 +42,16 @@ nav {
 }
 
 nav a {
-    color: #ffffff; 
+    color: var(--link-color); /* High contrast black */
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s;
+    background-color: var(--background-color); /* Ensuring a background color */
 }
 
 nav a:hover {
-    background-color: var(--secondary-color);
-    color: #000000; 
+    background-color: var(--link-hover-bg); /* Darker shade for hover */
+    color: #ffffff; /* White color on hover */
     border-radius: 5px;
 }
 
@@ -63,7 +66,7 @@ nav a:hover {
 }
 
 .hero h1 {
-    color: #1a1a1a; 
+    color: #1a1a1a; /* Dark grey for better contrast */
     font-size: 3em;
     margin-top: 20px;
 }
@@ -90,7 +93,7 @@ section {
 }
 
 section h2 {
-    color: #1a1a1a; 
+    color: #1a1a1a; /* Dark grey for better contrast */
     font-size: 2em;
     margin-bottom: 10px;
     text-align: center;
@@ -146,7 +149,7 @@ nav.sociallinks {
 
 nav.sociallinks a {
     text-decoration: none;
-    color: #ffffff; 
+    color: var(--link-color); /* High contrast black */
 }
 
 nav.sociallinks a:hover {
@@ -172,10 +175,6 @@ footer nav img {
     height: auto;
     margin: 0 10px;
 }
-
-
-
-
 
 
 
