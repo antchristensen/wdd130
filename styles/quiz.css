@@ -1,0 +1,140 @@
+/* Reset and Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #333;
+    background: #f0f8ff; /* Alice Blue for a lighter background */
+}
+
+/* Header Styles */
+header {
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Headings */
+h1 {
+    margin: 1rem;
+    font-size: 2em;
+    color: rgb(44, 9, 246); /* Dodger Blue for a vibrant look */
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    width: 850px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    background-color: #fafafa;
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Fieldset Styles */
+fieldset {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 2rem;
+    border: 1px solid #333;
+    padding: 1rem;
+    background-color: #dcdcdc; /* Gainsboro for a light gray background */
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+/* Labels and Inputs */
+label, input, select, textarea {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label {
+    text-align: left;
+    padding: 0.25rem;
+    counter-increment: question; /* Increment the question counter */
+
+}
+
+label::before {
+    content: counter(question) ". "; /* Add the counter before the label text */
+    font-weight: bold;
+    
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+}
+
+/* Buttons */
+button {
+    margin: 1rem;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;    
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffd700; /* Gold on hover */
+}
+
+/* Footer Styles */
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #333;
+    border-top: 1px solid #ccc;
+    padding: 1rem 0;
+}
+
+/* Form Item Styles */
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+/* Initialize counter for labels */
+form {
+    counter-reset: question;
+}
+
+legend {
+    padding: 0 10px; /* Space around the text */
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: -1.5rem; /* Position above the border */
+    left: 10px; /* Align with fieldset content */
+    background: #f0f8ff; /* Match background color */
+}
+
+
+
+
+
+
