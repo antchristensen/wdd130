@@ -161,10 +161,10 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: var(--primary-color);
     color: #fff;
     margin-top: 20px;
 }
+
 
 footer p {
     margin: 10px 0;
@@ -180,6 +180,97 @@ p {
     color: #1a1a1a; 
     background-color: #f4f7f9;
 }
+
+
+form {
+    width: 850px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    display: grid;
+}
+
+
+fieldset {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 2rem;
+    border: 1px solid #333;
+    padding: 1rem;
+}
+
+fieldset {
+    padding: .5rem;
+    color: blue;
+    font-size: 1em;
+}
+
+
+label, input, select, textarea {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label {
+    text-align: right;
+    padding: .05rem;
+}
+
+
+input, select, textarea {
+    padding: .05rem;
+    font-size: 1.1rem;
+}
+
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: bottom;
+}
+
+
+button {
+    margin: 1rem;
+    background-color: rgb(247, 247, 50);
+    color: #000000;
+    border: none;
+    border-radius: .05rem;
+    padding: .75rem;    
+    font-size: 1rem;
+}
+
+
+
+.column1 {
+    grid-template-columns: 1fr 1fr;
+    margin: .5rem 0;
+}
+
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.newsletter {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+button:hover {
+    background-color: #ffd700; 
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
 
 
 
