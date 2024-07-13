@@ -119,25 +119,34 @@ section h2 {
 .adventure-gallery {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .adventure-gallery figure {
     text-align: center;
-    max-width: 180px;
-    flex: 1;
+    max-width: 300px;
+    flex: 1 1 30%;
 }
 
 .adventure-gallery img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .adventure-gallery figcaption {
+    margin-top: 10px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.adventure-gallery p {
     margin-top: 5px;
+    text-align: center; 
+    font-size: 16px;
     color: var(--text-color);
 }
 
@@ -272,14 +281,86 @@ button:hover {
 }
 
 
+.package1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Increase the gap between the figures */
+    flex-wrap: wrap;
+    padding: 20px; /* Optional: Add padding around the gallery */
+}
+
+.package1 figure {
+    text-align: center;
+    max-width: 300px; /* Increase the max width for larger images */
+    flex: 1 1 30%; /* Adjust flex properties for responsiveness */
+    margin: 0 auto; /* Center the figure */
+}
+
+.package1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.package1 figcaption {
+    margin-top: 10px;
+    color: var(--text-color);
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold;
+}
+
+.package1 p {
+    font-size: 16px; /* Adjust font size as needed */
+    color: var(--text-color); /* Ensure this variable is defined */
+    margin-top: 5px;
+}
+
+figure {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
 
 
+.trip-banner {
+    position: relative;
+    text-align: center; 
+}
+
+.trip-banner img {
+    width: 100%;
+    height: auto; 
+}
+
+.trip-banner h1 {
+    position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px 10px;
+    font-size: 2em; 
+    margin: 0; 
+    display: inline-block; 
+}
 
 
+.underline {
+    text-decoration: underline;
+}
+
+.larger {
+    font-size: 20px;
+}
 
 
-
-
+.package1 .package {
+    text-align: center;
+    flex: 1 1 30%; /* Adjust width for each package */
+    max-width: 375px; /* Optional: Set a max width */
+}
 
 
 
