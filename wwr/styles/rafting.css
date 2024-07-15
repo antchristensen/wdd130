@@ -284,9 +284,9 @@ button:hover {
 .package1 {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Increase the gap between the figures */
+    gap: 20px; 
     flex-wrap: wrap;
-    padding: 20px; /* Optional: Add padding around the gallery */
+    padding: 20px; 
 }
 
 .package1 figure {
@@ -335,8 +335,8 @@ figure {
 
 .trip-banner h1 {
     position: absolute;
-    top: 50%; /* Middle of the image vertically */
-    right: 5%; /* Adjust as needed */
+    top: 50%; 
+    right: 5%; 
     transform: translateY(-50%);
     color: white; 
     background-color: rgb(0, 0, 0); 
@@ -364,8 +364,8 @@ figure {
 
 .package1 .package {
     text-align: center;
-    flex: 1 1 30%; /* Adjust width for each package */
-    max-width: 375px; /* Optional: Set a max width */
+    flex: 1 1 30%; 
+    max-width: 375px; 
 }
 
 .little {
@@ -375,30 +375,29 @@ figure {
 
 .links {
     display: grid;
-    gap: 100px; /* Adjust the spacing between the links */
+    gap: 100px; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .links a {
-    font-size: 2em; /* Make the links bigger */
-    text-decoration: none; /* Remove underline */
-    color: #333; /* Link color */
-    padding: 10px 20px; /* Add padding for better click area */
-    background-color: #f0f0f0; /* Background color */
-    border-radius: 5px; /* Rounded corners */
+    font-size: 2em; 
+    text-decoration: none; 
+    color: #333; 
+    padding: 10px 20px; 
+    background-color: #f0f0f0; 
+    border-radius: 5px; 
 
 }
 
 .links a:hover {
-    background-color: #dad6d6; /* Change background color on hover */
+    background-color: #dad6d6; 
 }
 
 
 .center {
     text-align: center;
-    text-decoration: none;
 }
 
 
